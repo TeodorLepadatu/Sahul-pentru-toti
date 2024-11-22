@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+        <title>
+            Deschiderea
+        </title>
+    </head>
+    <body>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+              <ul>
+                  <li><a href="http://localhost:5000/index">Pagina principala</a></li>
+                  <li><a href="baze.html">Bazele sahului</a></li>
+                  <li><a href="deschiderea.html">Deschiderea</a></li>
+                  <li><a href="mijloc.html">Jocul de mijloc</a></li>
+                  <li><a href="finalul.html">Finalul</a></li>
+                  <li><a href="tabla.html">Demo tabla</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+        <div id="header">
+            <h3>Etapele unui joc de sah sunt deschiderea, jocul de mijloc si finalul. In aceasta pagina veti gasi o introducere in prima etapa a unui joc: deschiderea.</h3>
+        </div>
+        <p id="defdeschidere">Ce este deschiderea?</p>
+        <p>
+            Deschiderea este prima parte a jocului de sah, in care jucatorii isi aseaza piesele in modul in care vor, pentru a-si construi o pozitie avantajoasa. Totusi, nu putem face chiar ce dorim in deschidere, ci ar trebui sa respectam cateva principii, care ne ajuta sa obtinem acea pozitie avantajoasa pe care o dorim.
+        </p>
+        <p>Un exemplu de pozitie ce respecta toate aceste principii este aceasta:</p>
+        <img src="images/opening.jpg" id="QG" alt="pozitie gambitul damei">
+        <p>Pozitia din stanga este foarte intalnita in sah si provine din deschiderea numita ,,Gambitul Damei Refuzat"</p>
+        <a href="https://en.wikipedia.org/wiki/Queen%27s_Gambit_Declined">Pentru a descoperi mai multe despre aceasta deschidere, dati click aici.</a>
+        <p>Totusi, va invit sa descoperim, folosind aceasta diagrama si urmatorul quiz, principiile deschiderii.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form id="quiz-form" onsubmit="return validateQuiz()">
+          <label for="q1">1. Cum se numeste mutarea speciala pe care a facut-o negru cu regele? (este foarte importanta in orice partida)</label>
+          <input type="text" id="q1" name="q1"><br>
+      
+          <label for="q2">2. Unde sunt dezvoltate piesele albe?</label>
+          <input type="radio" id="q2a" name="q2" value="in centru">
+          <label for="q2a">in centru</label><br>
+          <input type="radio" id="q2b" name="q2" value="in partea dreapta a tablei">
+          <label for="q2b">in partea dreapta a tablei</label><br>
+          <input type="radio" id="q2c" name="q2" value="in partea stanga a tablei">
+          <label for="q2c">in partea stanga a tablei</label><br>
+      
+          <label for="q3">3. Ce doreste albul prin pozitionarea pionilor?(similar cu cea a celorlalte piese)</label>
+          <input type="text" id="q3" name="q3"><br>
+      
+          <input type="submit" value="Submit">
+      </form>
+      
+        <script src="script.js"></script>
+        
+    </body>
+</html>
+    

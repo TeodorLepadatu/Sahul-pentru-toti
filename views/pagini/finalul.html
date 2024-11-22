@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>
+            Finalul
+        </title>
+    </head>
+    <body>
+        <div id="header">Finalul</div>
+        <nav>
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="http://localhost:5000/index">Pagina principala</a></li>
+                    <li><a href="baze.html">Bazele sahului</a></li>
+                    <li><a href="deschiderea.html">Deschiderea</a></li>
+                    <li><a href="mijloc.html">Jocul de mijloc</a></li>
+                    <li><a href="finalul.html">Finalul</a></li>
+                    <li><a href="tabla.html">Demo tabla</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        <p>Finalul este ultima etapa a jocului de sah si incepe atunci cand majoritatea pieselor au fost capturate. Desi pare o etapa simplu de jucat, nu este adevarat, ea fiind cea mai complexa si cu strategii foarte diferite fata de jocul de mijloc.</p>
+        <p>Putem incepe cu o pozitie intalnita de mine intr-o partida pe care am jucat-o recent. Care este mutarea pe care jucatorul cu piesele negre trebuie sa o faca pentru a se asigura ca va castiga acest meci?</p>
+        <img id="photo" src="images/endgame1st.jpg" class="center" alt="endgame position">
+        <form id="quiz-form" onsubmit="return validateQuiz1()">
+            <label for="q1">1. Ce mutare ati face ca negru?</label>
+            <input type="text" id="q1" name="q1"><br>
+          </form>
+          <script src="script.js"></script>
+        <p>Totusi, aceasta pozitie este una similara tacticilor din jocul de mijloc. Dar ce alte situatii mai putem descoperi in final?</p>
+        <ol>
+          <li><i>Matul cu o combinatie de piese</i>
+              <p>Acesta poate fi:</p>
+              <ul>
+                  <li>Matul cu dama</li>
+                  <li>Matul cu doua turnuri</li>
+                  <li>Matul cu un turn</li>
+                  <li>Matul cu doi nebuni</li>
+                  <li>Matul cu un cal si un nebun</li>
+              </ul>
+          </li>
+          <li>Finalul de pioni si rege - poate fi simplificat la celebrul final rege si pion contra rege:<img class="mutare1pion" src="images/king_and_pawn_vs_pawn.jpg" alt="pion rege vs pion"></li>
+          <li>Finalul de pioni si figuri(o figura este orice alta piesa care nu e pion sau rege)</li>
+          <li>Finalul de figuri</li>
+          <li>Finaluri combinate</li>
+      </ol>
+      
+        si multe altele...
+        <p>Pentru ca nu sunt un expert si nu pot scrie toata teoria finalurilor aici, va voi trimite la un videoclip de pe platforma <a href="https://www.youtube.com/">YouTube</a>, pentru a viziona un videoclip despre acest lucru, dand click <a href="https://www.youtube.com/watch?v=SEbGmTJ95DU">aici</a>.</p>
+        <p>...saaaau aici:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SEbGmTJ95DU?si=_WBC7pJ1qtCletsZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </body>
+</html>

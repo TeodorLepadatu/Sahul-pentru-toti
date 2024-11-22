@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>
+            Bazele sahului
+        </title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Cum se joaca accest joc?</h1>
+          </div>
+          <nav>
+            <div class="dropdown">
+              <button class="dropbtn">Menu</button>
+              <div class="dropdown-content">
+                  <ul>
+                      <li><a href="http://localhost:5000/index">Pagina principala</a></li>
+                      <li><a href="baze.html">Bazele sahului</a></li>
+                      <li><a href="deschiderea.html">Deschiderea</a></li>
+                      <li><a href="mijloc.html">Jocul de mijloc</a></li>
+                      <li><a href="finalul.html">Finalul</a></li>
+                      <li><a href="tabla.html">Demo tabla</a></li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+        <section>
+            <h2>Inceperea jocului</h2>
+            <div class="tq">
+                <p>Pentru a juca acest joc, avem nevoie de un set specific format dintr-o tabla cu 64 de patratele albe si negre si 32 de piese: 16 albe si 16 negre. Dintre acestea, 8 sunt pioni, 2 sunt turnuri, 2 cai, 2 nebuni, o dama si un rege pentru fiecare culoare.</p>
+            </div>
+            <div>
+            <img src="images/asezare.jpg" class="center" alt="pozitia initiala">
+            </div>
+            <div id="center_text">
+                In acest mod se aseaza piesele pe o tabla de sah inainte de a incepe jocul.
+            </div>
+            <div>
+            <p>Fiecare patrat de pe tabla de sah se poate identifica dupa culoare(alb si negru) si dupa coordonate(litere si cifre), ca in figura:</p>
+            <img src="images/coord.jpg" class="center" alt="coordonatele patratelor">
+            <p>Pentru a incerca coordonatele, apasati <a href="tabla.html">aici</a>.</p>
+            <p>Pentru a scrie o mutare, vom spune piesa(C,N,D,T,R) si patratul in care ea ajunge (ex: Nd3-nebun la d3). Mutarile de pion de scriu folosind doar patratul in care el ajunge (ex:d4). O capturare va fi marcata cu semnul "x"(ex:Dxf7 sau o captura de pion: exd5); sahul va fi marcat cu semnul "+" (ex:Nc6+); matul cu semnul "#"(ex:Dg7#); promovarea unui pion va folosi semnul "=" si piesa in care el se va transforma(ex:g8=D), iar en-passant va lua in considerare patratul in care ajunge pionul(ex:exf6).</p>
+            </div>
+        </section>
+        <section>
+            <p id="moveInstructions">
+            Cum se muta piesele?
+        </p>
+        <div class="tq">
+            <p>
+                1. Pionul
+            </p>
+        </div>
+        <div>
+            Pionul este considerata de multi cea mai slaba dintre piese din cauza mutarilor limitate pe care le poate face, un lucru total fals. Pionul are 5 variante de a muta, fiecare putand fi facuta in situatii diferite:
+        </div>
+        <ul>
+            <li><i>Mutarea cu un patrat in fata(mutarea normala)</i></li>
+            <li><i>Mutarea cu doua patrate in fata</i></li>
+            <li><i>Capturarea</i></li>
+            <li><i>En-passant</i></li>
+            <li><i>Promovarea</i></li>
+        </ul>
+            <h4>Mutarea cu un patrat in fata(mutarea normala)</h4>
+            <img class="mutare1pion" src="images/regular_pawn_move.jpg" alt="mutare de pion normala">
+            <p>-se poate face in orice moment daca patratul in care pionul ajunge nu este ocupat de alta piesa</p>
+            <h4>Mutarea cu doua patrate in fata</h4>
+            <img id="mutare2pion" src="images/2squares_pawnmove.png" alt="pion muta 2 patrate">
+            <P>-se poate face numai daca pionul nu a mai fost mutat niciodata in respectivul meci</P>
+            <h4>Capturarea</h4>
+            <img class="mutare1pion" src="images/pawn_capture.jpg" alt="pion ia">
+            <p>-se poate face cand o piesa adversa este plasata in diagonala patratului pe care este amplasat pionul</p>
+            <p><i>ATENTIE!</i> pionii pot merge doar inainte, deci nici capturarea unei piese inamice nu poate fi facuta inapoi!</p>
+            <h4>En-passant</h4>
+            <p>-este un caz particular al capturarii ce nu poate fi executat decat intr-un caz special</p>
+            <img id="mutare3pion" src="images/en-passant.jpg" alt="en-passant">
+            <p>-se poate executa doar ca in imagine: negrul a mutat anterior pinul doua patrate, iar acum pionul alb se afla exact langa el pe orizontala. Acum, albul poate captura pionul negru ca si cum pionul negru ar fi cu un patrat mai in spate</p>
+            <h4>Promovarea</h4>
+            <p>-este motivul pentru care pionul devine cea mai importanta piesa pentru finalul partidei</p>
+            <p>-cand pionul ajunge pe ultima linie(adica unde au inceput piesele negre), pionul poate fi transformat in orice alta piesa in afara de rege</p>
+            <img id="mutare4pion" src="images/pawn_promotion.jpg" alt="pion scoate">
+        
+        <div class="tq">
+            <p>
+                2. Calul
+            </p>
+        </div>
+        <div>
+            Calul este acea piesa care poate fi foarte periculoasa pentru cei neatenti, mutarile aceseia fiind uneori greu de observat. In plus, este singura piesa care poate "sari" peste alte piese.
+            <p>
+                El se muta in forma de "L", ca in figura:
+            </p>
+            <img class="mutare1pion" src="images/knight-1-move.png" alt="muta calu">
+        </div>
+        <div class="tq">
+            <p>
+                3. Nebunul
+            </p>
+        </div>
+        <div>
+            <p>
+                Nebunul se muta intotdeauna in diagonala, ca in figura:
+            </p>
+            <img class="mutare1pion" src="images/bishop_move.jfif" alt="muta nebunu">
+        </div>
+        <div class="tq">
+            <p>
+                4. Turnul
+            </p>
+        </div>
+        <div>
+            <p>Turnul se muta pe o linie sau pe o coloana, ca in figura:</p>
+            <img class="mutare1pion" src="images/rook_move.png" alt="muta tura">
+        </div>
+        <div class="tq">
+            <p>
+                5. Dama
+            </p>
+        </div>
+        <div>
+            <p>Dama este o combinatie intre turn si nebun, ea putand fi mutata si pe diagonala si pe coloana si pe linie, ca in figura:</p>
+            <img class="mutare1pion" src="images/queen_move.jfif" alt="muta dama">
+        </div>
+        <div class="tq">
+            <p>
+                6. Regele
+            </p>
+        </div>
+        <div>
+            Regele este cea mai importanta piesa, scopul jocului fiind atacarea acestuia, fara ca el sa mai poata scapa(situatie numita sah-mat).
+            <img class="mutare1pion" src="images/checkmate.jfif" alt="mat">
+            Atacarea acestuia de catre orice piesa, se numeste sah. 
+            In plus, regii celor doi jucatori nu pot ajunge niciodata in patratele vecine, indiferent de directie.
+            Regele poate face doua mutari:
+        </div>
+        <ul>
+            <li><i>Mutarea normala</i></li>
+            <li><i>Rocada</i></li>
+        </ul>
+            <h4>Mutarea normala</h4>
+            <p>-se poate face in orice directie, ca in figura:</p>
+            <img class="mutare1pion" src="images/king_move.png" alt="muta regele">
+            <h4>Rocada</h4>
+            <p>Este o mutare ce se face impreuna cu tura si poate fi de doua feluri:</p>
+            <ol>
+                <li><i>Rocada mica</i></li>
+                <li><i>Rocada mare</i></li>
+            </ol>
+                <h5>Rocada mica</h5>
+                <p>-se face impreuna cu turnul mai apropiat de rege</p>
+                <p>-necesita un spatiu liber intre turn si rege, iar aceste patrate nu trebuie sa fie atacate de piese adverse</p>
+                <img class="mutare1pion" src="images/kingside_castling.jpg" alt="rocada mica">
+                <h5>Rocada mare</h5>
+                <p>-se face impreuna cu turnul mai departat de rege</p>
+                <p>-necesita un spatiu liber intre turn si rege, iar aceste patrate nu trebuie sa fie atacate de piese adverse</p>
+                <img class="mutare1pion" src="images/queenside_castling.png" alt="rocada mare">
+        </section>
+    </body>
+</html>
